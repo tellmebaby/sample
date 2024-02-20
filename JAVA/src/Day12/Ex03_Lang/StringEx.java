@@ -1,13 +1,12 @@
-package Day11.Ex07_Lang;
+package Day12.Ex03_Lang;
 
 public class StringEx {
 
 	public static void main(String[] args) {
 		String str1 = " TheJoEun Academy ";
-		String str2 = " TheJoEun Academy ";
+		String str2 = " theJoEun Academy ";
 		
-		
-		System.out.println( str1.charAt(2) ); 				// index 에 있는 문자 추출
+		System.out.println( str1.charAt(2) ); 				// index 에 있는 문자 추출 (순서 0부터)
 		System.out.println( str1.concat(str2) );			// str1 + str2 문자열 연결
 		System.out.println( str1.contains("Academy"));		// 문자열 포함 여부 확인 (true/false)
 		System.out.println( str1.equals(str2) );			// 문자열 일치 여부 확인 (true/false)
@@ -18,7 +17,6 @@ public class StringEx {
 		System.out.println( str1.length() );				// 문자열의 길이 (글자수) [공백포함]
 		System.out.println( str1.substring(10) );			// index 앞의 문자열을 자르고, 뒤의 문자열을 반환
 		System.out.println( str1.substring(10,17) );		// index-(index2-1)까지 반환
-		
 		
 		// split("구분자")				: (구분자)를 기준으로 문자열을 잘라서 배열로 반호나
 		String[] sp = str1.split("");
@@ -38,6 +36,5 @@ public class StringEx {
 		String[] num = cal.split("\\+");	// 정규표현식의 + 기호가 아닌 산술연산자 + 로 구분하려면, 앞에 \\ 를 붙여주어야한다.
 		System.out.println("피연산자1 : " + num[0]);
 		System.out.println("피연산자2 : " + num[1]);
-				
 	}
 }
