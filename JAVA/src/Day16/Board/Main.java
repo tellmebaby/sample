@@ -128,7 +128,7 @@ public class Main {
 	
 	// 게시글 정보 입력
 	public static Board input() {
-		sc.nextLine()
+		sc.nextLine();
 		System.out.print("제목 : ");
 		String title = sc.nextLine();
 		System.out.println("작성자 : ");
